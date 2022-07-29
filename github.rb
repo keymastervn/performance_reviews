@@ -117,8 +117,6 @@ class GithubPerformanceReview
       extract_results(result)
 
       break if get_last_cursor(result).nil?
-
-      puts "looping through: #{get_last_cursor(result)}"
     end
 
     display_performance
@@ -166,7 +164,7 @@ class GithubPerformanceReview
     puts "Hello #{ENV['GITHUB_USERNAME']}"
     puts "From #{ENV['SESSION_START']} to #{ENV['SESSION_END']}"
     puts "You've made #{@total_pr} PR reviews in #{ENV['GITHUB_OWNER']} with #{@total_comment} comments"
-    puts "There are #{@comment_with_suggestion} comments in good quality, #{@comment_gt_200_char} is short-form and #{@comment_gt_500_char} is long-form"
+    puts "There are #{@comment_with_suggestion} comments in good quality, #{@comment_gt_200_char} are short-form and #{@comment_gt_500_char} are long-form"
     puts "Keep it up, review code better 💪💪💪"
     puts "~~~~~~~~~~"
   end
