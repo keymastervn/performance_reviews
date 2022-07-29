@@ -1,0 +1,31 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (6.1.6.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
+    concurrent-ruby (1.1.10)
+    dotenv (2.8.1)
+    graphql (2.0.12)
+    graphql-client (0.18.0)
+      activesupport (>= 3.0)
+      graphql
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.16.2)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.6.0)
+
+PLATFORMS
+  x86_64-darwin-19
+
+DEPENDENCIES
+  dotenv (~> 2.8)
+  graphql-client (~> 0.18.0)
+
+BUNDLED WITH
+   2.2.17
